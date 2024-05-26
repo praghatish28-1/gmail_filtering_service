@@ -1,0 +1,36 @@
+[
+    {
+        "description": "Rule 1",
+        "if": "all",
+        "conditions": [
+            {
+                "field_name": "From",
+                "predicate": "contains",
+                "value": "jobalerts-noreply@linkedin.com"
+            },
+            {
+                "field_name": "Subject",
+                "predicate": "contains",
+                "value": "software engineer"
+            }
+        ],
+        "perform_actions": [
+            "mark_as_unread",
+            "move_to_linkedinjobs"
+        ]
+    },
+    {
+        "description": "Rule 2",
+        "if": "any",
+        "conditions": [
+            {
+                "field_name": "Date received",
+                "predicate": "less_than",
+                "value": "2022-01-01"
+            }
+        ],
+        "perform_actions": [
+            "mark_as_unread"
+        ]
+    }
+]
