@@ -15,7 +15,7 @@
             }
         ],
         "perform_actions": [
-            "mark_as_unread",
+            "mark_as_read",
             "move_to_linkedinjobs"
         ]
     },

@@ -24,11 +24,11 @@ def main():
     gmail_service = GmailService(credentials_path, token_path, scopes)
 
     logging.info('Fetching emails...')
-    #emails = gmail_service.fetch_emails()
+    emails = gmail_service.fetch_emails()
     logging.info('Emails fetched...')
     logging.info('Storing into db')
-    # for email in emails:
-    #     db_manager.store_email(*email)
+    for email in emails:
+        db_manager.store_email(*email)
     logging.info('Successfully written into db')
 
     rule_processor = RuleProcessor(db_manager, gmail_service, rules_path)
