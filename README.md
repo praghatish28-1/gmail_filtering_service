@@ -6,8 +6,7 @@ This project is a rule-based system for email processing, where rules are specif
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/email-rule-processor.git
-
+   git clone https://github.com/praghatish28-1/gmail_filtering_service.git
 2. Install dependencies:
     ``pip install -r requirements.txt``
 
