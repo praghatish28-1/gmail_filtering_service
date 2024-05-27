@@ -48,3 +48,9 @@ This project is a rule-based system for email processing, where rules are specif
    
       ```sh
       python main.py
+      
+## Running Tests
+To run the unit tests, execute the `run_test.py` script:
+
+```sh
+python run_test.py
